@@ -20,7 +20,6 @@ public class C01_ScreenShot1 extends TestBase {
         -tum ekran goruntusu seleniumdan gelen getScreenshotAs metotu ile alinir.
         -getScreenshotAs metotu seleniumdaki TakesScreenshot api indan gelir
      */
-
     @Test
     public void fullPagScreenShot() throws IOException {
 
