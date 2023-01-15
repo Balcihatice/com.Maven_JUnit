@@ -17,7 +17,6 @@ public class C01_ExtendReports2 extends TestBase {
     protected static ExtentHtmlReporter extentHtmlReporter;
     protected static ExtentTest extentTest;
 
-
         @BeforeClass
         public static void extentReportsSetUp(){
 //      REPORT  PATH
@@ -39,7 +38,6 @@ public class C01_ExtendReports2 extends TestBase {
             extentHtmlReporter.config().setDocumentTitle("TechProEd Extent Reports");
             extentHtmlReporter.config().setReportName("Regression Test Sonucu");
 //        ********************************RAPOR AYARLARI BITTI****************************
-
 
 //        Raporu projeme ekliyorum
             extentReports.attachReporter(extentHtmlReporter);
