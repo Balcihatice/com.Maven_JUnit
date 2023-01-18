@@ -22,14 +22,11 @@ public class C01_ExcelRead {
 
         String path = "./src/test/java/resources/Capitals.xlsx";//  <./ > yi biz ekledik
 
-
         //DOSYAYI AC
         FileInputStream fileInputStream = new FileInputStream(path);
 
-
         //EXCELL DOSYASINI AC/WORKBOOK AC
         Workbook workbook = WorkbookFactory.create(fileInputStream);
-
 
         //SAYFAYI AC/SHEET1(ASIL EXCEL DOSYASINA GIT)
         //  Sheet sheet1 = workbook.getSheetAt(0);
@@ -40,7 +37,6 @@ public class C01_ExcelRead {
 
         //O VERIYI YAZDIR
         Cell cell1 = row1.getCell(0);//ilk huxredeki datayi al.
-
 
         //O VERIYI YAZDIR
         System.out.println(cell1);
@@ -78,7 +74,6 @@ public class C01_ExcelRead {
         System.out.println(ulkeBaskentleri);
 
 
-    }
 
 
 }
