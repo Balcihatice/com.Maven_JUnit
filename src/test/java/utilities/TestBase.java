@@ -37,11 +37,13 @@ public abstract class TestBase {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
     }
+
+
     //    tearDown
     @After
     public void tearDown(){
 
-        driver.quit();
+        //driver.quit();
     }
     //    MULTIPLE WINDOW:
 //    1 parametre alir : Gecis Yapmak Istedigim sayfanin Title
