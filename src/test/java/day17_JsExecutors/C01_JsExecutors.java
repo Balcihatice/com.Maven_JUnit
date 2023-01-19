@@ -51,5 +51,13 @@ public class C01_JsExecutors extends TestBase {
         takeScreenShotOfPage();
 
 
+        //EN USTE GIT
+
+        scrollTopJS();
+        waitFor(3);
+
+        //EN ALTA IN
+        scrollEndJS();
+        waitFor(3);
     }
 }
