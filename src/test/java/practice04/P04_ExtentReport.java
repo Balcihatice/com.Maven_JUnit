@@ -9,7 +9,7 @@ import utilities.TestBase;
 
 import java.time.Duration;
 
-import static day14.C03_ExtentReports.extentReports;
+import static day14_ScreenShot.C03_ExtentReports.extentReports;
 
 public class P04_ExtentReport extends TestBase {
     @Test

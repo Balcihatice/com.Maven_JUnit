@@ -1,4 +1,4 @@
-package day10;
+package day10_Actions;
 
 import org.junit.Assert;
 import org.junit.Test;

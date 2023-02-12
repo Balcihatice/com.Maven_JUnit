@@ -1,4 +1,4 @@
-package day14;
+package day14_ScreenShot;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -54,7 +54,7 @@ public class C03_ExtentReports extends TestBase {
         //TUM AYARLAR BITTI. EXTEND TEST OGJESI ILE LOGLAMA(RAPORA YAZDIRMA) ISLEMINI YAPALIM
         extentTest.pass("Kullanici Ana Sayfaya gider");
         driver.get("https://www.techproeducation.com");
-
+        // pass info(bilgilendirme)-->> genelde kullanilir.
         //LMS SAYFASINA GIDELIM
         extentTest.pass("Kullanici LMS sayfasina gider");
         driver.findElement(By.linkText("LMS LOGIN"));

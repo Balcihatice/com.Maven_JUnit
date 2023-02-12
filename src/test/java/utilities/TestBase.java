@@ -2,7 +2,6 @@ package utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
-import org.bouncycastle.asn1.crmf.PKIPublicationInfo;
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.*;
@@ -45,7 +44,7 @@ public abstract class TestBase {
     @After
     public void tearDown() {
 
-        //driver.quit();
+        driver.quit();
     }
 
     //    MULTIPLE WINDOW:
