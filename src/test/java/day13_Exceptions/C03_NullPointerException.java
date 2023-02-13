@@ -1,4 +1,4 @@
-package day13;
+package day13_Exceptions;
 
 import com.github.javafaker.Faker;
 import org.junit.Test;

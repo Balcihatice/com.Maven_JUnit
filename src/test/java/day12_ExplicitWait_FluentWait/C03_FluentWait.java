@@ -1,4 +1,4 @@
-package day12;
+package day12_ExplicitWait_FluentWait;
 
 import org.junit.Assert;
 import org.junit.Test;

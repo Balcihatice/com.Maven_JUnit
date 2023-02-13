@@ -1,4 +1,4 @@
-package day13;
+package day13_Exceptions;
 
 import org.junit.Assert;
 import org.junit.Test;

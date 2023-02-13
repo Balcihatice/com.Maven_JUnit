@@ -1,4 +1,4 @@
-package day11;
+package day11_Downloads;
 
 import org.junit.Test;
 import org.openqa.selenium.By;

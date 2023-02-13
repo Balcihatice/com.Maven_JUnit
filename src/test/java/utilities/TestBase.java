@@ -84,7 +84,7 @@ public abstract class TestBase {
     }
 
     //    ACTIONS_RIGHT CLICK
-    public static void rightClickOnElementActions(WebElement element) {
+    public static void contextClickOnElementActions(WebElement element) {
         Actions actions = new Actions(driver);
         actions.contextClick(element).perform();
     }
