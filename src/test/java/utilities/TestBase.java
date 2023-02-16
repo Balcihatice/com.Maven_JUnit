@@ -254,21 +254,19 @@ public abstract class TestBase {
 
 
     //BU METHODLA BELIRLI BIR ELEMENTE JS EXECUTOR ILE TIKLANABILIR
-    public void clickByJS(WebElement element){
+    public void clickByJS(WebElement element) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].click();", element);
     }
 
 
-
     //GIRMIS OLDUGUM METNI ELEMENTE YAZDIRIR
     //BU METHOD sendKeys METHODUNA ALTERNATIFTIR.
     //sendKeys ONCELIKLI TERCIGIMIZDIR
-    public void typeWithJS(WebElement element, String metin){
+    public void typeWithJS(WebElement element, String metin) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].setAttribute('value','"+metin+"')", element);
+        js.executeScript("arguments[0].setAttribute('value','" + metin + "')", element);
     }
-
 
 
     //    input elementindeki degerleri(value) al
@@ -286,6 +284,4 @@ public abstract class TestBase {
 //             document.querySelector(".example").value; -> CSS DEGERI KULLANILABILIR
 //             document.querySelector("#example").value; -> CSS DEGERI KULLANILABILIR
     }
-
-
 }

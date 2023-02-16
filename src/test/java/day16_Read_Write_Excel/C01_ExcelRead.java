@@ -18,7 +18,7 @@ public class C01_ExcelRead {
 
         //WORKBOOK > WORKSHEET/SHEET > ROW (SATIR) > CELL(VERI HUCRESI)
 
-        String path = "./src/test/java/resources/Capitals.xlsx";//  <./ > yi biz ekledik
+        String path = "./src/test/java/resources/Capitals.xlsx";//  <./ > yi biz ekledik,oncekileride aldik
 
         //DOSYAYI AC
         FileInputStream fileInputStream = new FileInputStream(path);
@@ -56,7 +56,7 @@ public class C01_ExcelRead {
         int kullanilanToplamSatirSayisi = sheet1.getPhysicalNumberOfRows();
         System.out.println(kullanilanToplamSatirSayisi);//1 den basliyor
 
-        //COUNTRY, CAPITALS key ve valulari map a alip print et
+        //COUNTRY, CAPITALS key ve valulari map`e alip print et
         //  {{USA,D,C},{FRANCE,PARIS},...}
         // Variable olusturalim. Bu variable exceldeki countr, capital verilerini tutacak
 
@@ -64,14 +64,12 @@ public class C01_ExcelRead {
 
         for (int satirSayisi = 1; satirSayisi < kullanilanToplamSatirSayisi; satirSayisi++) {
 
-            String country = sheet1.getRow(satirSayisi).getCell(0).toString().toString();
+            String country = sheet1.getRow(satirSayisi).getCell(0).toString();
             String capital = sheet1.getRow(satirSayisi).getCell(1).toString();
             ulkeBaskentleri.put(country, capital);
 
         }
         System.out.println(ulkeBaskentleri);
 
-
     }
-
 }

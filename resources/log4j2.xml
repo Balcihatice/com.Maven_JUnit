@@ -25,7 +25,7 @@
     <Loggers>
         <!--        Istedigim klasordeki ayarlari degistirmek icin kullanilir
         Bu kisimdaki ayar alttaki ROOT klasorundeki ayari OVERRIDE EDER-->
-        <Logger name="day18" level="trace" additivity="false">
+        <Logger name="day18_log4J" level="trace" additivity="false">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="file"/>
         </Logger>
